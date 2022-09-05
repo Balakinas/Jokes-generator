@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 26 | Jokes 🤍💜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form class="joke__form" id="jokeForm">
+        <label>
+            Random <input type="radio" name="jokeType" value="random">
+        </label>
+        
+        <label>
+            From categories <input type="radio" name="jokeType" value="categories" checked>
+            <ul class="joke__categories" id="jokeCategories"></ul>
+        </label>
+        
+        <label>
+            Search <input type="radio" name="jokeType" value="search">
+            <input class="joke__search" type="text" id="jokeSearch">
+        </label>
+
+        <button>Get a joke</button>
+    </form>
+
+    <div class="container">
+        <div class="jokes__container" id="jokesContainer"></div>
+        <div class="jokes__container jokes__container--fav" id="jokesContainerFavourite"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
